@@ -61,6 +61,11 @@ public class TcpDiscoveryClientHeartbeatMessage extends TcpDiscoveryAbstractMess
     }
 
     /** {@inheritDoc} */
+    @Override public boolean traceLogLevel() {
+        return true;
+    }
+
+    /** {@inheritDoc} */
     @Override public String toString() {
         return S.toString(TcpDiscoveryClientHeartbeatMessage.class, this, "super", super.toString());
     }
